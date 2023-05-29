@@ -16,7 +16,7 @@ import java.math.BigDecimal;
 @Getter
 @Setter
 @NoArgsConstructor
-public class Product {
+public class Plat {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -24,8 +24,7 @@ public class Product {
 
     @Version
     private Integer version;
-
-    private String productId;
+    private String platId;
     private String name;
     private BigDecimal price;
     }
