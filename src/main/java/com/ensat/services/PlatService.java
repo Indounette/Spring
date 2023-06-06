@@ -8,7 +8,7 @@ public interface PlatService {
 
     Plat getPlatById(Integer id);
 
-    Plat savePlat(Plat product);
+    Plat savePlat(Plat plat);
 
     void deletePlat(Integer id);
 

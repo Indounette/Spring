@@ -11,28 +11,28 @@ import org.springframework.stereotype.Service;
 @Service
 public class PlatServiceImpl implements PlatService {
      @Autowired
-     private PlatRepository productRepository;
+     private PlatRepository platRepository;
 
     
 
     @Override
     public Iterable<Plat> listAllPlats() {
-        return productRepository.findAll();
+        return platRepository.findAll();
     }
 
     @Override
     public Plat getPlatById(Integer id) {
-        return productRepository.findById(id).get();
+        return platRepository.findById(id).get();
     }
 
     @Override
-    public Plat savePlat(Plat product) {
-        return productRepository.save(product);
+    public Plat savePlat(Plat plat) {
+        return platRepository.save(plat);
     }
 
     @Override
     public void deletePlat(Integer id) {
-        productRepository.deleteById(id);
+        platRepository.deleteById(id);
     }
 
 }
