@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head lang="en">
-    <title>Snoop's restaurant</title>
+    <title>Le Bistrot</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="path/to/bootstrap.min.css">
     <!-- Add any additional CSS files or styles here -->
     <!--/*/ <th:block th:include="fragments/headerinc :: head"></th:block> /*/-->
+    <style>
+        /* Add your custom styles here */
+        .container {
+            margin-top: 50px;
+        }
+        .form-horizontal .form-group {
+            margin-bottom: 20px;
+        }
+        .form-horizontal .control-label {
+            text-align: left;
+            padding-top: 7px;
+        }
+        .form-horizontal .col-sm-10 {
+            padding-top: 6px;
+        }
+        .form-horizontal .btn {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
 <div class="container">
@@ -37,7 +56,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-offset-2 col-sm-10">
-                    <button type="submit" class="btn btn-default">Submit</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </div>
         </form>
@@ -48,4 +67,3 @@
 <!-- Add any additional JavaScript files or scripts here -->
 </body>
 </html>
-
